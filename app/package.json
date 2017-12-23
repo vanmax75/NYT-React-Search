@@ -1,0 +1,23 @@
+{
+  "name": "reactified-nyt",
+  "version": "0.0.9",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && react-snapshot",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-helmet": "^4.0.0",
+    "react-router-dom": "^4.1.1",
+    "react-snapshot": "^1.1.0",
+    "styled-components": "^2.0.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "proxy": "http://localhost:8000"
+}

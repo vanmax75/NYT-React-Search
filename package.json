@@ -1,0 +1,33 @@
+{
+  "name": "reactified-nyt",
+  "version": "1.0.0",
+  "description": "Reactified NYT homework assignment [Mongo, Express, React, Node]",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ronnytomasetti/reactified-nyt.git"
+  },
+  "engines": {
+    "node": "6.9.x"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "app/node_modules"
+  ],
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon -r dotenv/config server",
+    "heroku-postbuild": "cd app/ && npm install --only=dev && npm install && npm run build && rm -rf ./public ./src"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.14.1",
+    "mongoose": "^4.10.5",
+    "morgan": "^1.8.2",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
+  },
+  "license": "MIT"
+}
